@@ -1,4 +1,4 @@
-# epg5_hecatomb_euk_readStatsTable.R
+# epg5_hecatomb_euk_readStatTables.R
 
 # Script will produce:
 #   1.) A data frame of individual reads and their alignment stats
@@ -64,10 +64,10 @@ readAlignmentDataFiltered <- readAlignmentData %>%
 saveRDS(readAlignmentData, "../data/RData_Objects/readAlignmentData.RDS")
 saveRDS(readAlignmentDataFiltered, "../data/RData_Objects/readAlignmentDataFiltered.RDS")
 
-save.image("../data/RData_Objects/191203_Baldridge_VLPtagging_euk_readStatsTable.R")
+save.image("../data/RData_Objects/191203_Baldridge_VLPtagging_euk_readStatTables.R")
 
 writeLines(capture.output(sessionInfo()),
-           "191203_Baldridge_VLPtagging_euk_readStatsTable_session_info.txt")
+           "191203_Baldridge_VLPtagging_euk_readStatTablse_session_info.txt")
 Sys.Date()
 getwd()
 sessionInfo()
